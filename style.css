@@ -1,0 +1,162 @@
+body {
+    font-family: Arial, sans-serif;
+   
+    margin: 144px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 1494px;
+    background-size: 50%;
+}
+
+.container {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 640px;
+    margin-left: 324px;
+    margin-bottom: 310px;
+}
+
+.login-signup {
+    display: flex;
+}
+
+form {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+h2 {
+    text-align: center;
+}
+
+label {
+    margin-top: 10px;
+}
+
+input {
+    padding: 8px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    background-color: #4caf50;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.forgot-password {
+    margin-top: 20px;
+    text-align: right;
+    text-decoration: none;
+    color: #4caf50;
+    margin-right:75px;
+}
+.forgot-password:hover {
+    text-decoration: underline;
+}
+
+.privacy-policy {
+    font-size: 12px;
+    margin: 10px;
+    text-align: center;
+}
+
+.privacy-policy a {
+    color: #4fa852;
+    text-decoration: none;
+}
+
+.privacy-policy a:hover {
+    text-decoration: underline;
+}
+.tài-khoản-icon {
+    width: 59px;
+    height: 59px;
+    position: relative;
+    object-fit: cover;
+    margin-left: 1222px;
+    margin-bottom: 200px;
+  }
+
+footer {
+    align-self: stretch;
+    background-color: #c3f2cd;
+    flex-direction: row;
+    padding: var(--padding-35xl) 182px var(--padding-15xl);
+    gap: var(--gap-77xl);
+    text-align: left;
+    font-size: var(--font-size-mini-9);
+    color: var(--color-gray-100);
+    font-family: var(--font-inter);
+    
+    height: 200px; 
+   
+ 
+}
+
+
+  grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 cột với chiều rộng bằng nhau */
+    gap: 0px; /* Khoảng cách giữa các cột */
+    max-width: 1200px; /* Giới hạn chiều rộng của grid */
+    margin: 0 auto; /* Đưa grid về giữa màn hình */
+}
+
+/* Phần grid_row */
+.grid_row {
+    display: flex;
+    flex-wrap: wrap; /* Cho phép các cột chuyển xuống dòng mới khi không đủ không gian */
+    margin-left:50px;
+    float: right;
+    margin-bottom: 10px;
+    margin-right: 20px;
+    height: auto;
+}
+
+/* Phần grid_column */
+.grid_column {
+    flex: 1; /* Phần tử chiếm toàn bộ chiều rộng của grid_row */
+    margin-left:100px;
+    
+}
+
+/* Phần tiêu đề trong grid_column */
+.footer_hheading {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+/* Phần danh sách trong grid_column */
+.footer-list {
+    list-style: none;
+    padding: 0;
+}
+
+/* Phần mỗi mục trong danh sách */
+.footer-item {
+    margin-bottom: 8px;
+}
+
+/* Phần liên kết trong mỗi mục */
+.footer-item_link {
+    text-decoration: none;
+    color: #333;
+    display: block;
+}
+
+/* Phần icon trong liên kết */
+.footer-item_link i {
+    margin-right: 5px;
+}
+
