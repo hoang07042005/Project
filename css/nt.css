@@ -6,10 +6,10 @@ body {
   }
 
   header {
-    background-color: #333;
+    background-color: #5b5b5b;
     color: white;
     text-align: center;
-    padding: 111px;
+    padding: 112px 0px 0px;
   }
    h1{
     margin-top:100px;
@@ -17,8 +17,11 @@ body {
     text-align: center;
   }
   header img {
-    max-width: 100%;
     height: auto;
+    width: 70%;
+    display: block;
+    margin: 0 auto;
+    border-radius: 30px;
   }
 
   .event-container {
@@ -86,3 +89,5 @@ body {
   .btn-dark {
     background-color: #333;
   }
+
+
