@@ -347,3 +347,44 @@ main {
     border-radius: 8px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
 }
+
+.image-gallery {
+    display: flex;
+    justify-content: space-between; /* Các phần sẽ nằm ở hai bên của container */
+    flex-wrap: wrap; /* Nếu không thể hiển thị cùng một lúc, dòng mới sẽ được tạo */
+  }
+  
+  /* Định dạng chung cho card */
+  .card {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-bottom: 20px;
+    width: 100%; /* Đảm bảo card chiếm hết chiều rộng của container cha */
+  }
+  
+  /* Định dạng hình nền cho card-cover */
+  .card-cover {
+    height: 200px; /* Điều chỉnh chiều cao theo nhu cầu */
+    background-size: cover;
+    background-position: center;
+    position: relative;
+  }
+  
+  /* Định dạng chung cho các link */
+  a {
+    text-decoration: none;
+  }
+  
+  /* Định dạng tiêu đề sự kiện */
+  .event-title a {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  /* Định dạng nội dung card */
+  .card-body {
+    padding: 15px;
+  }
+  
