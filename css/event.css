@@ -8,6 +8,7 @@
 body {
     font-family: 'Arial', sans-serif;
     line-height: 1.6;
+    background-color: #212529;
 }
 
 .container3 {
@@ -68,7 +69,7 @@ body {
 
 .event-description {
     font-style: italic;
-    color: #555;
+    color: #fff;
 }
 
 /* Image Gallery */
@@ -136,6 +137,11 @@ footer {
     text-align: center;
 }
 
+.h2, h2 {
+    font-size: calc(1.325rem + .9vw);
+    color: #fff;
+}
+
 /* Responsive Design */
 @media screen and (max-width: 768px) {
     .navbar-nav {
@@ -165,3 +171,6 @@ footer {
         width:200px; /* Điều chỉnh lại độ cao cho thiết bị di động */
     }
 }
+
+
+
