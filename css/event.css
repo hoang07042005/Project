@@ -8,7 +8,7 @@
 body {
     font-family: 'Arial', sans-serif;
     line-height: 1.6;
-    background-color: #212529;
+    background-color: #fff;
 }
 
 .container3 {
@@ -72,7 +72,7 @@ body {
 
 .event-description {
     font-style: italic;
-    color: #fff;
+    color: #100f0f;
 }
 
 /* Image Gallery */
@@ -142,7 +142,7 @@ footer {
 
 .h2, h2 {
     font-size: calc(1.325rem + .9vw);
-    color: #fff;
+    color: #0d0d0d;
 }
 
 /* Responsive Design */

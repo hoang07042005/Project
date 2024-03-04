@@ -146,7 +146,8 @@ td {
     color: #ff9f1a;
 }
 .product-description,
-.product-code {
+.product-code,
+.sold {
     color: rgb(131, 130, 128);
 }
 .product-title,
