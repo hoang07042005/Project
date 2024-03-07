@@ -27,12 +27,13 @@ header {
 }
 
 .event-details {
+  height: 1200px;
   flex: 1;
-  padding: 20px;
   background-color: white;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   margin-right: 20px;
   margin-bottom: 100px;
+  padding: 0 190px;
 }
 
 .event-sidebar {
@@ -63,7 +64,7 @@ header {
   transition: background-color 0.3s ease;
   cursor: pointer;
   margin-top: 20px;
-  margin-left: 55px;
+  margin-left: 25%;
 }
 
 .buy-button:hover {
@@ -73,13 +74,27 @@ header {
 .btn-dark {
   background-color: #333;
 }
-  .liveshow-info {
-    max-width: 800px;
-    margin: 50px auto;
-    padding: 20px;
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+.liveshow-info {
+  max-width: 800px;
+  /* margin: 10px auto; */
+  padding: 0px;
+  background-color: #fff;
+  border-radius: 8px;
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+  margin-top: 20px;
+}
+.liveshow-info p {
+  color: rgb(73, 72, 72);
+}
+.liveshow-info img {
+  max-width: 100%;
+  height: auto;
+  margin-top: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.liveshow-info span {
+  font-size: 1.3em;
 }
 .breadcumb-area {
   position: relative;

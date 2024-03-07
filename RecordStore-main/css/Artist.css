@@ -17,7 +17,7 @@ main {
   line-height: 0.5em;
   max-width: 36%;
   margin-left: 70px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-top: 40px;
 }
 
 
@@ -56,7 +56,7 @@ main {
   background-color: white;
   padding: 20px;
   border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
   margin-left: 60px;
 }
 

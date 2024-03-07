@@ -20,7 +20,7 @@ header {
     padding: 0;
     display: flex;
     flex-wrap: wrap;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    
 }
 
 .custom-list li {
@@ -36,18 +36,19 @@ header {
     text-align: center;
     background-color: white;
     border-radius: 5px;
+    font-size: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .custom-list h1 {
     display: block;
     padding: 50px;
-    color: rgb(232, 231, 231);
+    color: white;
     text-decoration: none;
     text-align: center;
     background-color: rgb(87, 85, 85);
     border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
     font-size: 36px;
 }
 
@@ -77,10 +78,10 @@ header {
     width: 100%;
 }
 
-.col-md-6  {
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+/* .col-md-6  {
+    
     border-radius:10px;
-}
+} */
 
 .breadcrumb-area {
     background-color: #e6e6e6;
@@ -97,6 +98,7 @@ header {
     width: 90%;
     margin-left: 77px;
     margin-bottom: 20px;
+    margin-top: 55px;
 }
 
 

@@ -156,3 +156,12 @@ footer a:hover{
     width: 250px;
     height: 250px;
 }
+
+
+
+
+
+.product-card a {
+    color: black;
+    text-decoration: none;
+}
