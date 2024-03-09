@@ -25,7 +25,7 @@ header {
 
 .custom-list li {
     flex: 1;
-    margin: 5px; /* Để tạo khoảng cách giữa các cột */
+    margin: 5px; 
 }
 
 .custom-list a {
@@ -48,7 +48,7 @@ header {
     text-align: center;
     background-color: rgb(87, 85, 85);
     border-radius: 5px;
-    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     font-size: 36px;
 }
 
@@ -156,4 +156,71 @@ header {
 .breadcrumb-item {
     font-size: 20px;
     list-style-type: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.woof_container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;  
+}
+
+       
+.custom-select {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+   
+}
+
+
+#selected-option-1, 
+#selected-option-2,
+#selected-option-3 {
+    display: block;
+    padding: 10px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    text-align: center;
+    border-radius: 10px;
+    font-size: 20px;
+}
+
+
+.options-list {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    z-index: 1;
+}
+
+
+.options-list li {
+    max-width: 100%;
+    padding: 10px;
+    cursor: pointer;
+    
+}
+
+
+.options-list li:hover {
+    background-color: #f0f0f0;
 }

@@ -87,16 +87,61 @@
                             <li><a href="#mam-dia">BĂNG</a></li>
                             <li><a href="#may-cassette">SÁCH</a></li>
                         </ul>
-                        <ul>
-                            <li><h1 href="#product">PRODUCT</h1></li>
-                        </ul>
-                        <ul>
-                            <li><a href="#the-loai">THỂ LOẠI</a></li>
-                            <li><a href="#thoi-ky">THỜI KỲ</a></li>
-                            <li><a href="#tinh-trang-kho">TÌNH TRẠNG KHO</a></li>
-                        </ul>
+                        <div class="elementor-widget-container">
+                            <h1 class="elementor-heading-title elementer-size-defaultl">PRODUCT</h1>
+                        </div>
+                        <div class="woof_container">
+                            <div class="woof_block_html_items">
+                                <div class="custom-select">
+                                    <span id="selected-option-1" onclick="toggleOptions('options-list-1')">THỂ LOẠI</span>
+                                    <ul class="options-list" id="options-list-1">
+                                        <li data-value="rock">Rock (427)</li>
+                                        <li data-value="electronic">Electronic (163)</li>
+                                        <li data-value="pop">Pop (542)</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <input type="hidden" name="woof_t_pa_the-loai" value="Sản phẩm Thể Loại">
+                            
+                            <div class="woof_block_html_items">
+                                <div class="custom-select">
+                                    <span id="selected-option-2" onclick="toggleOptions('options-list-2')">THỜI KỲ</span>
+                                    <ul class="options-list" id="options-list-2">
+                                        <li data-value="1">1</li>
+                                        <li data-value="00s">00s (1507)</li>
+                                        <li data-value="70s">70s (1)</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <input type="hidden" name="woof_t_pa_thoi_ky" value="Sản phẩm Thời Kỳ">
+                        
+                            <div class="woof_block_html_items">
+                                <div class="custom-select">
+                                    <span id="selected-option-3" onclick="toggleOptions('options-list-3')">HIHI</span>
+                                    <ul class="options-list" id="options-list-3">
+                                        <li data-value="1">1</li>
+                                        <li data-value="2">2</li>
+                                        <li data-value="3">3</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <input type="hidden" name="woof_t_pa_" value="">
+                        </div>
                     </div>
-                 
+                    <script>
+                        function toggleOptions(optionsListId) {
+                            var optionsList = document.getElementById(optionsListId);
+                    
+                            if (optionsList.style.display === 'none' || optionsList.style.display === '') {
+                                var rect = document.getElementById(optionsListId.replace("options-list-", "selected-option-")).getBoundingClientRect();
+                                optionsList.style.top = rect.height + 'px';
+                                optionsList.style.display = 'block';
+                            } else {
+                                optionsList.style.display = 'none';
+                            }
+                        }
+                    </script>
+
                     <div class="col-9">
                         <hr>
                         <div class="product-list row text-dark">
