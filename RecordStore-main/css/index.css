@@ -11,11 +11,7 @@ body{
     color: #FFF;
     border: #872424;
 }
-.card-item{
-    box-shadow: 0 0 10px rgba(11, 5, 5, 0.1);
-    border-radius: 20px;
-    background-color: #fff;
-}
+
 .position-absolute{
     background-color: red;
 }
@@ -74,7 +70,7 @@ body{
 }
 .trending-card {
  background-color: #ffffff;
- border-radius: 11.1%;
+ 
 }
 
 .trending-img span{
@@ -85,7 +81,7 @@ body{
     padding: 8px 20px;
 }
 .trending-img img{
-    border-radius: 11%;
+  
     -webkit-transition: all 0.3s ease;
     -o-transition: all 0.3s ease;
     transition: all 0.3s ease;
@@ -130,7 +126,7 @@ footer a:hover{
     }
 }
 .breadcrumb-area {
-    background-color: #ff9f1a;
+    background-color: #9e9e9e;
     height: 42px;
 }
 
@@ -185,6 +181,10 @@ footer a:hover{
     float: right;
     margin: 20px 0;
 }
-
+@media (min-width: 1025px) {
+	.h-custom {
+	height: 100vh !important;
+	}
+	}
 
 

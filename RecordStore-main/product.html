@@ -7,14 +7,12 @@
         <title>Product</title>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
-        <link rel="stylesheet" href="css/index.css">
         <link rel="stylesheet" href="css/product.css">
+         <link rel="stylesheet" href="css/index.css">
         <link rel="shortcut icon" type="img/png" href="img/OIG2.jpg">
 </head>
 <body>
     <div class="wrapper">
-        
         <nav class = "navbar navbar-expand-lg bg-dark py-4 fixed-top">
             <div class = "container">
                 <a class = "navbar-brand d-flex justify-content-between align-items-center order-lg-0" href = "index.html">
@@ -26,10 +24,12 @@
                     <button type = "button" class = " icon btn position-relative btn-outline-secondary">
                         <i class = "fa fa-search"></i>
                     </button>
-                    <button type = "button" class = " icon btn position-relative btn-outline-secondary ">
-                        <i class = "fa fa-shopping-cart"></i>
-                        <span class = "position-absolute top-0 start-100 translate-middle badge ">5</span>
-                    </button>
+
+                    <a href="cart.html">
+                        <button type = "button" class = "icon btn position-relative btn-outline-secondary">
+                            <i class = "fa fa-shopping-cart"></i>
+                        </button>
+                    </a>
                     <a href="login.html">
                         <button type = "button" class = "icon btn position-relative btn-outline-secondary">
                             <i class = "fa fa-user"></i>
@@ -54,80 +54,77 @@
                             <a class = "nav-link text-uppercase text-white rounded-pill" href = "ArtistList.html">Artist list</a>
                         </li>
                         <li class = "nav-item px-2 py-2">
-                            <a class = "nav-link text-uppercase text-white rounded-pill" href = "membership.html">Membership</a>
+                        <a class = "nav-link text-uppercase text-white rounded-pill" href = "membership.html">Membership</a>
                         </li>
                         <li class = "nav-item px-2 py-2">
                             <a class = "nav-link text-uppercase text-white rounded-pill" href = "about-us.html">About us</a>
+                        </li>
+                        <li class = "nav-item px-2 py-2">
+                            <a class = "nav-link text-uppercase text-white rounded-pill" href = "contact_us.html">Contact us</a>
                         </li>
                     </ul>
                 </div>
             </div>
         </nav>
-        <header id="header">
-            <div class="breadcrumb-area container-fluid">
-            <div class="row">
-                <div class="col-lg-12 col-md-6 col-sm-3 d-flex flex-wrap">
-                    <ul class="breadcrumb pt-2">
-                        <li class="breadcrumb-item"><a class="text-secondary" href="index.html">Home</a></li>
-                        <li class="breadcrumb-item active">Product</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        </header>
+        </nav>
+        
 
         
 
-        <div class="main-content">
+        <div class="main-content1">
             <div class="container">
                 <div class="row">
                     <div class="custom-list">
                         <div class="new-custom-list">
-                            <span><a href="#dian-than">CD, DVD</a></span>
-                            <span><a href="#mam-dia">BĂNG</a></span>
-                            <span><a href="#may-cassette">SÁCH</a></span>
+                            <span><a href="#cd-dvd">CD/DVD</a></span>
+                            <span><a href="#vinly">Vinly</a></span>
+                            <span><a href="#books">Books</a></span>
                         </div>
                         <div class="elementor-widget-container">
                             <h1 class="elementor-heading-title elementer-size-defaultl">PRODUCT</h1>
                         </div>
+                    
                         <div class="woof_container">
                             <div class="woof_block_html_items">
                                 <div class="custom-select">
-                                    <span id="selected-option-1" onclick="toggleOptions('options-list-1')">THỂ LOẠI</span>
+                                    <span id="selected-option-1" onclick="toggleOptions('options-list-1')">Category</span>
                                     <ul class="options-list" id="options-list-1">
-                                        <li data-value="rock">Rock </li>
-                                        <li data-value="electronic">Electronic </li>
-                                        <li data-value="pop">Pop </li>
+                                        <li><a href="Artist.html">Rock</a></li>
+                                        <li><a href="electronic_page.html">Electronic</a></li>
+                                        <li><a href="pop_page.html">Pop</a></li>
+                                        <li><a href="movie_page.html">Movie</a></li>
                                     </ul>
                                 </div>
                             </div>
-                            <input type="hidden" name="woof_t_pa_the-loai" value="Sản phẩm Thể Loại">
+                            <input type="hidden" name="woof_t_pa_the-loai" value="product">
                             
                             <div class="woof_block_html_items">
                                 <div class="custom-select">
-                                    <span id="selected-option-2" onclick="toggleOptions('options-list-2')">THỜI KỲ</span>
+                                    <span id="selected-option-2" onclick="toggleOptions('options-list-2')">Time Liness</span>
                                     <ul class="options-list" id="options-list-2">
-                                        <li data-value="1">1</li>
-                                        <li data-value="00s">00s (1507)</li>
-                                        <li data-value="70s">70s (1)</li>
+                                        <li><a href="#">90s</a></li>
+                                        <li><a href="#">80s (1507)</a></li>
+                                        <li><a href="#">70s (1)</a></li>
                                     </ul>
                                 </div>
                             </div>
-                            <input type="hidden" name="woof_t_pa_thoi_ky" value="Sản phẩm Thời Kỳ">
+                            <input type="hidden" name="woof_t_pa_thoi_ky" value="product">
                         
                             <div class="woof_block_html_items">
                                 <div class="custom-select">
-                                    <span id="selected-option-3" onclick="toggleOptions('options-list-3')">HIHI</span>
+                                    <span id="selected-option-3" onclick="toggleOptions('options-list-3')">Perform</span>
                                     <ul class="options-list" id="options-list-3">
-                                        <li data-value="1">1</li>
-                                        <li data-value="2">2</li>
-                                        <li data-value="3">3</li>
+                                        <li><a href="#"></a>Solo</li>
+                                        <li><a href="#"></a>Bands</li>
+                                        <li><a href="#"></a></li>
                                     </ul>
                                 </div>
                             </div>
                             <input type="hidden" name="woof_t_pa_" value="">
+
+                            
                         </div>
-                    </div>
+                </div>
                     <script>
                         function toggleOptions(optionsListId) {
                             var optionsList = document.getElementById(optionsListId);
@@ -147,125 +144,98 @@
                         <div class="product-list row text-dark">
                             <div class = "col-md-6 col-lg-4 col-xl-3 p-2">
                                 <div class = "product-img position-relative overflow-hidden">
-                                    <a href="thongtinsp.html"><img src = "img/bằng kiều.jfif" class = "w-100" alt=""></a>
+                                    <a href="thongtinsp.html"><img src = "img/NzktNzA3Ny5qcGVn.jpeg" class = "w-100" alt=""></a>
                                     <span class = "position-absolute bg-primary text-white d-flex align-items-center justify-content-center">sale</span>
                                 </div>
                                 <div class = "text-center">
                                     <p class = "text-capitalize mt-3 mb-1">
-                                        SPIRITED AWAY SOUNDTRACK ALBUM</p>
+                                        TV ANIMATION SPY X FAMILY ORIGINAL SOUNDTRACK</p>
                                     <span class = "fw-bold d-block">$ 45.50</span>
                                     <a href = "" class = "btn btn-primary mt-3">Add to Cart</a>
                                 </div>
                             </div>
+                            <div class = "card-item col-md-6 col-lg-4 col-xl-3 p-2" >
+                                <div class = "product-img position-relative overflow-hidden">
+                                    <img src = "img/1-84-800x791 (1).jpg" class = "w-100" alt="">
+                                </div>
+                                <div class = "text-center">
+                                    <p class = "text-capitalize mt-3 mb-1">
+                                        PERSON TO PERSON  (GREEN)       </p>
+                                    <span class = "fw-bold d-block">$ 50.00</span>
+                                    <a href = "#" class = "btn btn-primary mt-3">Add to Cart</a>
+                                </div>
+                            </div>
                             <div class = "col-md-6 col-lg-4 col-xl-3 p-2">
                                 <div class = "product-img position-relative overflow-hidden">
-                                    <img src = "img/MOIV0029.jpg" class = "w-100" alt="">
+                                    <img src = "img/S072.jpg" class = "w-100" alt="">
+                                </div>
+                                <div class = "text-center">
+                                    <p class = "text-capitalize mt-3 mb-1">
+                                        KNOWING ME, KNOWING YOU / HAPPY HAWAII</p>
+                                    <span class = "fw-bold d-block">$ 10.00</span>
+                                    <a href = "#" class = "btn btn-primary mt-3">Add to Cart</a>
+                                </div>
+                            </div>
+                            <div class = "col-md-6 col-lg-4 col-xl-3 p-2">
+                                <div class = "product-img position-relative overflow-hidden">
+                                    <img src = "img/jp-op-2.webp" class = "w-100" alt="">
+                                </div>
+                                <div class = "text-center">
+                                    <p class = "text-capitalize mt-3 mb-1">
+                                        「Đại Lộ Mặt Trời」 mini-CD [JAPAN EDITION]</p>
+                                    <span class = "fw-bold d-block">$ 35.50</span>
+                                    <a href = "#" class = "btn btn-primary mt-3">Add to Cart</a>
+                                </div>
+                            </div>
+                            <div class = "col-md-6 col-lg-4 col-xl-3 p-2">
+                                <div class = "product-img position-relative overflow-hidden">
+                                    <img src = "img/31.webp" class = "w-100" alt="">
+                                </div>
+                                <div class = "text-center">
+                                    <p class = "text-capitalize mt-3 mb-1">
+                                        LOI CHOI</p>
+                                    <span class = "fw-bold d-block">$ 14.50</span>
+                                    <a href = "#" class = "btn btn-primary mt-3">Add to Cart</a>
+                                </div>
+                            </div>
+                            <div class = "col-md-6 col-lg-4 col-xl-3 p-2">
+                                <div class = "product-img position-relative overflow-hidden">
+                                    <img src = "img/D0176.jpg" class = "w-100" alt="">
                                     <span class = "position-absolute bg-primary text-white d-flex align-items-center justify-content-center">sale</span>
                                 </div>
                                 <div class = "text-center">
                                     <p class = "text-capitalize mt-3 mb-1">
-                                        SPIRITED AWAY SOUNDTRACK ALBUM</p>
+                                        STONE BLUE</p>
                                     <span class = "fw-bold d-block">$ 45.50</span>
                                     <a href = "#" class = "btn btn-primary mt-3">Add to Cart</a>
                                 </div>
                             </div>
                             <div class = "col-md-6 col-lg-4 col-xl-3 p-2">
                                 <div class = "product-img position-relative overflow-hidden">
-                                    <img src = "img/MOIV0029.jpg" class = "w-100" alt="">
+                                    <img src = "img/NzEtMjU5OC5qcGVn.jpeg" class = "w-100" alt="">
                                     <span class = "position-absolute bg-primary text-white d-flex align-items-center justify-content-center">sale</span>
                                 </div>
                                 <div class = "text-center">
                                     <p class = "text-capitalize mt-3 mb-1">
-                                        SPIRITED AWAY SOUNDTRACK ALBUM</p>
+                                        A KIND OF BLUES VOLUME ONE (LOS ANGELES BROADCAST 1994)</p>
                                     <span class = "fw-bold d-block">$ 45.50</span>
                                     <a href = "#" class = "btn btn-primary mt-3">Add to Cart</a>
                                 </div>
                             </div>
                             <div class = "col-md-6 col-lg-4 col-xl-3 p-2">
                                 <div class = "product-img position-relative overflow-hidden">
-                                    <img src = "img/MOIV0029.jpg" class = "w-100" alt="">
+                                    <img src = "img/ODMtODYyMC5qcGVn.jpeg" class = "w-100" alt="">
                                     <span class = "position-absolute bg-primary text-white d-flex align-items-center justify-content-center">sale</span>
                                 </div>
                                 <div class = "text-center">
                                     <p class = "text-capitalize mt-3 mb-1">
-                                        SPIRITED AWAY SOUNDTRACK ALBUM</p>
-                                    <span class = "fw-bold d-block">$ 45.50</span>
-                                    <a href = "#" class = "btn btn-primary mt-3">Add to Cart</a>
-                                </div>
-                            </div>
-                            <div class = "col-md-6 col-lg-4 col-xl-3 p-2">
-                                <div class = "product-img position-relative overflow-hidden">
-                                    <img src = "img/MOIV0029.jpg" class = "w-100" alt="">
-                                    <span class = "position-absolute bg-primary text-white d-flex align-items-center justify-content-center">sale</span>
-                                </div>
-                                <div class = "text-center">
-                                    <p class = "text-capitalize mt-3 mb-1">
-                                        SPIRITED AWAY SOUNDTRACK ALBUM</p>
-                                    <span class = "fw-bold d-block">$ 45.50</span>
-                                    <a href = "#" class = "btn btn-primary mt-3">Add to Cart</a>
-                                </div>
-                            </div>
-                            <div class = "col-md-6 col-lg-4 col-xl-3 p-2">
-                                <div class = "product-img position-relative overflow-hidden">
-                                    <img src = "img/MOIV0029.jpg" class = "w-100" alt="">
-                                    <span class = "position-absolute bg-primary text-white d-flex align-items-center justify-content-center">sale</span>
-                                </div>
-                                <div class = "text-center">
-                                    <p class = "text-capitalize mt-3 mb-1">
-                                        SPIRITED AWAY SOUNDTRACK ALBUM</p>
-                                    <span class = "fw-bold d-block">$ 45.50</span>
-                                    <a href = "#" class = "btn btn-primary mt-3">Add to Cart</a>
-                                </div>
-                            </div>
-                            <div class = "col-md-6 col-lg-4 col-xl-3 p-2">
-                                <div class = "product-img position-relative overflow-hidden">
-                                    <img src = "img/MOIV0029.jpg" class = "w-100" alt="">
-                                    <span class = "position-absolute bg-primary text-white d-flex align-items-center justify-content-center">sale</span>
-                                </div>
-                                <div class = "text-center">
-                                    <p class = "text-capitalize mt-3 mb-1">
-                                        SPIRITED AWAY SOUNDTRACK ALBUM</p>
-                                    <span class = "fw-bold d-block">$ 45.50</span>
-                                    <a href = "#" class = "btn btn-primary mt-3">Add to Cart</a>
-                                </div>
-                            </div>
-                            <div class = "col-md-6 col-lg-4 col-xl-3 p-2">
-                                <div class = "product-img position-relative overflow-hidden">
-                                    <img src = "img/MOIV0029.jpg" class = "w-100" alt="">
-                                    <span class = "position-absolute bg-primary text-white d-flex align-items-center justify-content-center">sale</span>
-                                </div>
-                                <div class = "text-center">
-                                    <p class = "text-capitalize mt-3 mb-1">
-                                        SPIRITED AWAY SOUNDTRACK ALBUM</p>
-                                    <span class = "fw-bold d-block">$ 45.50</span>
-                                    <a href = "#" class = "btn btn-primary mt-3">Add to Cart</a>
-                                </div>
-                            </div>
-                            <div class = "col-md-6 col-lg-4 col-xl-3 p-2">
-                                <div class = "product-img position-relative overflow-hidden">
-                                    <img src = "img/MOIV0029.jpg" class = "w-100" alt="">
-                                    <span class = "position-absolute bg-primary text-white d-flex align-items-center justify-content-center">sale</span>
-                                </div>
-                                <div class = "text-center">
-                                    <p class = "text-capitalize mt-3 mb-1">
-                                        SPIRITED AWAY SOUNDTRACK ALBUM</p>
-                                    <span class = "fw-bold d-block">$ 45.50</span>
-                                    <a href = "#" class = "btn btn-primary mt-3">Add to Cart</a>
-                                </div>
-                            </div>
-                            <div class = "col-md-6 col-lg-4 col-xl-3 p-2">
-                                <div class = "product-img position-relative overflow-hidden">
-                                    <img src = "img/MOIV0029.jpg" class = "w-100" alt="">
-                                    <span class = "position-absolute bg-primary text-white d-flex align-items-center justify-content-center">sale</span>
-                                </div>
-                                <div class = "text-center">
-                                    <p class = "text-capitalize mt-3 mb-1">
-                                        SPIRITED AWAY SOUNDTRACK ALBUM</p>
+                                        STAR TRACKIN' '76</p>
                                     <span class = "fw-bold d-block">$ 45.50</span>
                                     <a href = "#" class = "btn btn-primary mt-3">Add to Cart</a>
                                 </div>
                             </div>
                         </div>
+                    </div>
                         <hr>
 
                         <div class="pagination-area">
@@ -284,12 +254,12 @@
         </div>
 
 
-        <footer class="bg-dark py-5">
+        <footer class = "bg-dark py-5">
             <div class = "container">
                 <div class = "row text-white g-4">
                     <div class = "col-md-6 col-lg-3">
                         <a class = "text-uppercase text-decoration-none brand text-white" href = "index.html">Rhythm house</a>
-                        <p class = "text-white  mt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum mollitia quisquam veniam odit cupiditate, ullam aut voluptas velit dolor ipsam?</p>
+                        <p class = "text-white  mt-3">Rhythm House-Where Passion for Vinyl Connects</p>
                     </div>
                     <div class = "col-md-6 col-lg-3">
                         <h5 class = "fw-light">Links</h5>
@@ -300,7 +270,7 @@
                                 </a>
                             </li>
                             <li class = "my-3">
-                                <a href = "product.html" class = "text-white text-decoration-none t">
+                                <a href = "#" class = "text-white text-decoration-none t">
                                     <i class = "fas fa-chevron-right me-1"></i> Product
                                 </a>
                             </li>
@@ -319,6 +289,11 @@
                                     <i class = "fas fa-chevron-right me-1"></i> About Us
                                 </a>
                             </li>
+                            <li class = "my-3">
+                                <a href = "#" class = "text-white text-decoration-none">
+                                    <i class = "fas fa-chevron-right me-1"></i> Contact Us
+                                </a>
+                            </li>
                         </ul>
                     </div>
                     <div class = "col-md-6 col-lg-3">
@@ -328,7 +303,7 @@
                                 <i class = "fas fa-map-marked-alt"></i>
                             </span>
                             <span class = "fw-light">
-                            8A,Ton That Huyet,HaNoi
+                               8A,Ton That Huyet,HaNoi
                             </span>
                         </div>
                         <div class = "d-flex justify-content-start align-items-start my-2">
@@ -366,13 +341,13 @@
                     </div>
                     <hr class="mb-4">
                     <div class="row align-items-center">
-                    <div class="text-center">
+                      <div class="text-center">
                         <p>Copyright @Group3</p>
-                    </div>
+                      </div>
                     </div>
                 </div>
             </div>
         </footer>
-    </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>

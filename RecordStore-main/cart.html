@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <head>
+        <title>Record Store</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="css/index.css"> 
+      </head>
+<body>
+  <header id = "header" class = "carousel slide" data-bs-ride = "carousel" style = "padding-top: 100px;">
+    <nav class = "navbar navbar-expand-lg bg-dark py-4 fixed-top">
+      <div class = "container">
+          <a class = "navbar-brand d-flex justify-content-between align-items-center order-lg-0" href = "index.html">
+              <img src="img/OIG2.jpg" alt="" style="width: 25px;">
+              <span class = "text-uppercase text-white fw-lighter ms-2">Rhythm House</span>
+          </a>
+
+          <div class = "order-lg-2 nav-btns">
+              <button type = "button" class = " icon btn position-relative btn-outline-secondary">
+                  <i class = "fa fa-search"></i>
+              </button>
+
+              <a href="cart.html">
+                  <button type = "button" class = "icon btn position-relative btn-outline-secondary">
+                      <i class = "fa fa-shopping-cart"></i>
+                  </button>
+              </a>
+              <a href="login.html">
+                  <button type = "button" class = "icon btn position-relative btn-outline-secondary">
+                      <i class = "fa fa-user"></i>
+                  </button>
+              </a>
+          </div>
+          <button class = "navbar-toggler border-0 bg-white" type = "button" data-bs-toggle = "collapse" data-bs-target = "#navMenu">
+              <span class = "navbar-toggler-icon"></span>
+          </button>
+          <div class = "collapse navbar-collapse order-lg-1" id = "navMenu">
+              <ul class = "navbar-nav mx-auto text-center">
+                  <li class = "nav-item px-2 py-2">
+                      <a class = "nav-link text-uppercase text-white rounded-pill" href = "index.html">Home</a>
+                  </li>
+                  <li class = "nav-item px-2 py-2">
+                      <a class = "nav-link text-uppercase text-white rounded-pill" href = "product.html">Product</a>
+                  </li>
+                  <li class = "nav-item px-2 py-2">
+                      <a class = "nav-link text-uppercase text-white rounded-pill" href = "event.html">Event</a>
+                  </li>
+                  <li class = "nav-item px-2 py-2">
+                      <a class = "nav-link text-uppercase text-white rounded-pill" href = "ArtistList.html">Artist list</a>
+                  </li>
+                  <li class = "nav-item px-2 py-2">
+                  <a class = "nav-link text-uppercase text-white rounded-pill" href = "membership.html">Membership</a>
+                  </li>
+                  <li class = "nav-item px-2 py-2">
+                      <a class = "nav-link text-uppercase text-white rounded-pill" href = "about-us.html">About us</a>
+                  </li>
+                  <li class = "nav-item px-2 py-2">
+                      <a class = "nav-link text-uppercase text-white rounded-pill" href = "contact_us.html">Contact us</a>
+                  </li>
+              </ul>
+          </div>
+      </div>
+  </nav>
+</header>
+<section class="h-100 h-custom">
+  <div class="container h-100 py-5">
+    <div class="row d-flex justify-content-center align-items-center h-100">
+      <div class="col">
+
+        <div class="table-responsive">
+          <table class="table">
+            <head>
+              <tr>
+                <th scope="col" class="h5">Shopping Bag</th>
+                <th scope="col">Price</th>
+                <th scope="col">Quantity</th>
+                <th scope="col">Total amount</th>
+              </tr>
+            </head>
+            <tbody>
+              <tr>
+                <th scope="row">
+                  <div class="d-flex align-items-center">
+                    <img src="img/NzktNzA3Ny5qcGVn.jpeg"
+                      style="width: 120px;" alt="Banner">
+                    <div class="flex-column ms-4">
+                      <p class="mb-2">TV ANIMATION SPY X FAMILY ORIGINAL SOUNDTRACK</p>
+                      <p class="mb-0">(K)NOW_NAME</p>
+                    </div>
+                  </div>
+                </th>
+                <td class="align-middle">
+                  <p class="mb-0" style="font-weight: 500;">$45.50</p>
+                </td>
+                <td class="align-middle">
+                  <div class="d-flex flex-row">
+                    <input id="form1" min="0" name="quantity" value="1" type="number"
+                      class="form-control form-control-sm" style="width: 50px;" />
+                  </div>
+                </td>
+                <td class="align-middle">
+                  <p class="mb-0" style="font-weight: 500;">$45.50</p>
+                </td>
+              </tr>
+              <tr>
+                <th scope="row" class="border-bottom-0">
+                  <div class="d-flex align-items-center">
+                    <img src="https://upload.wikimedia.org/wikipedia/vi/a/a3/Shape_of_You_cover.jpg" class="img-fluid rounded-3"
+                      style="width: 120px;" alt="Banner">
+                    <div class="flex-column ms-4">
+                      <p class="mb-2">Shape of You  </p>
+                      <p class="mb-0">Ed Sheeran</p>
+                    </div>
+                  </div>
+                </th>
+                <td class="align-middle border-bottom-0">
+                  <p class="mb-0" style="font-weight: 500;">$20</p>
+                </td>
+                <td class="align-middle border-bottom-0">
+                  <div class="d-flex flex-row">
+                    <input id="form1" min="0" name="quantity" value="1" type="number"
+                      class="form-control form-control-sm" style="width: 50px;" />
+                  </td>
+                <td class="align-middle border-bottom-0">
+                  <p class="mb-0" style="font-weight: 500;">20$</p>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="card shadow-2-strong mb-5 mb-lg-0" style="border-radius: 16px;">
+          <div class="card-body p-4">
+
+            <div class="row">
+              <div class="col-md-6 col-lg-4 col-xl-3 mb-4 mb-md-0">
+                <form>
+                  <div class="d-flex flex-row pb-3">
+                    <div class="d-flex align-items-center pe-2">
+                      <input class="form-check-input" type="radio" name="radioNoLabel" id="radioNoLabel1v"
+                        value="" aria-label="..." checked />
+                    </div>
+                    <div class="rounded border w-100 p-3">
+                      <p class="d-flex align-items-center mb-0">
+                        <i class="fab fa-cc-mastercard fa-2x text-dark pe-2"></i>Credit
+                        Card
+                      </p>
+                    </div>
+                  </div>
+                  <div class="d-flex flex-row pb-3">
+                    <div class="d-flex align-items-center pe-2">
+                      <input class="form-check-input" type="radio" name="radioNoLabel" id="radioNoLabel2v"
+                        value="" aria-label="..." />
+                    </div>
+                    <div class="rounded border w-100 p-3">
+                      <p class="d-flex align-items-center mb-0">
+                        <i class="fab fa-cc-visa fa-2x fa-lg text-dark pe-2"></i>Debit Card
+                      </p>
+                    </div>
+                  </div>
+                  <div class="d-flex flex-row">
+                    <div class="d-flex align-items-center pe-2">
+                      <input class="form-check-input" type="radio" name="radioNoLabel" id="radioNoLabel3v"
+                        value="" aria-label="..." />
+                    </div>
+                    <div class="rounded border w-100 p-3">
+                      <p class="d-flex align-items-center mb-0">
+                        <i class="fab fa-cc-paypal fa-2x fa-lg text-dark pe-2"></i>PayPal
+                      </p>
+                    </div>
+                  </div>
+                </form>
+              </div>
+              <div class="col-md-6 col-lg-4 col-xl-6">
+                <div class="row">
+                  <div class="col-12 col-xl-6">
+                    <div class="form-outline mb-4 mb-xl-5">
+                      <input type="text" id="typeName" class="form-control form-control-lg" size="17"
+                        placeholder="John Smith" />
+                      <label class="form-label" for="typeName">Name on card</label>
+                    </div>
+
+                    <div class="form-outline mb-4 mb-xl-5">
+                      <input type="text" id="typeExp" class="form-control form-control-lg" placeholder="MM/YY"
+                        size="7" id="exp" minlength="7" maxlength="7" />
+                      <label class="form-label" for="typeExp">Expiration</label>
+                    </div>
+                  </div>
+                  <div class="col-12 col-xl-6">
+                    <div class="form-outline mb-4 mb-xl-5">
+                      <input type="text" id="typeText" class="form-control form-control-lg" size="17"
+                        placeholder="1111 2222 3333 4444" minlength="19" maxlength="19" />
+                      <label class="form-label" for="typeText">Card Number</label>
+                    </div>
+                    <div class="form-outline mb-4 mb-xl-5">
+                      <input type="password" id="typeText" class="form-control form-control-lg"
+                        placeholder="&#9679;&#9679;&#9679;" size="1" minlength="3" maxlength="3" />
+                      <label class="form-label" for="typeText">Cvv</label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-xl-3">
+                <div class="d-flex justify-content-between" style="font-weight: 500;">
+                  <p class="mb-2">Subtotal</p>
+                  <p class="mb-2">$23.49</p>
+                </div>
+
+                <div class="d-flex justify-content-between" style="font-weight: 500;">
+                  <p class="mb-0">Shipping</p>
+                  <p class="mb-0">$2.99</p>
+                </div>
+
+                <hr class="my-4">
+
+                <div class="d-flex justify-content-between mb-4" style="font-weight: 500;">
+                  <p class="mb-2">Total (tax included)</p>
+                  <p class="mb-2">$26.48</p>
+                </div>
+
+                <button type="button" class="btn btn-primary btn-block btn-lg">
+                  <div class="d-flex justify-content-between">
+                    <span>Checkout</span>
+                    <span>$26.48</span>
+                  </div>
+                </button>
+
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  // Lấy các phần tử cần thiết từ DOM
+  var quantityInputs = document.querySelectorAll('input[name="quantity"]');
+  var priceElements = document.querySelectorAll('.table tbody tr td:nth-child(2) p');
+  var totalAmountElements = document.querySelectorAll('.table tbody tr td:last-child p');
+  var subtotalElement = document.querySelector('.col-lg-4.col-xl-3 .d-flex.justify-content-between:nth-child(1) p:last-child');
+  var shippingElement = document.querySelector('.col-lg-4.col-xl-3 .d-flex.justify-content-between:nth-child(2) p:last-child');
+  var totalElement = document.querySelector('.col-lg-4.col-xl-3 .d-flex.justify-content-between.mb-4 p:last-child');
+  var checkoutButton = document.querySelector('.col-lg-4.col-xl-3 button.btn-primary');
+
+  // Cập nhật giá tiền khi thay đổi số lượng
+  function updateTotalAmount() {
+    var subtotal = 0;
+
+    totalAmountElements.forEach(function (totalAmountElement, index) {
+      var quantity = parseInt(quantityInputs[index].value);
+      var price = parseFloat(priceElements[index].innerText.replace('$', ''));
+      var totalAmount = quantity * price;
+      totalAmountElement.innerText = '$' + totalAmount.toFixed(2);
+      subtotal += totalAmount;
+    });
+
+    // Cập nhật tổng giá tiền
+    var shippingCost = 2.99; // Chi phí vận chuyển cố định
+    var total = subtotal + shippingCost;
+
+    // Cập nhật các phần tử Subtotal, Shipping, Total
+    subtotalElement.innerText = '$' + subtotal.toFixed(2);
+    shippingElement.innerText = '$' + shippingCost.toFixed(2);
+    totalElement.innerText = '$' + total.toFixed(2);
+
+    // Cập nhật nút Checkout
+    checkoutButton.querySelector('div span:last-child').innerText = '$' + total.toFixed(2);
+  }
+
+  // Xử lý sự kiện khi số lượng thay đổi
+  quantityInputs.forEach(function (input) {
+    input.addEventListener('input', function () {
+      updateTotalAmount();
+    });
+  });
+
+  // Thực hiện cập nhật giá tiền ban đầu
+  updateTotalAmount();
+});
+
+</script>
+
+
+<footer class = "bg-dark py-5">
+  <div class = "container">
+      <div class = "row text-white g-4">
+          <div class = "col-md-6 col-lg-3">
+              <a class = "text-uppercase text-decoration-none brand text-white" href = "index.html">Rhythm house</a>
+              <p class = "text-white  mt-3">Rhythm House-Where Passion for Vinyl Connects</p>
+          </div>
+          <div class = "col-md-6 col-lg-3">
+              <h5 class = "fw-light">Links</h5>
+              <ul class = "list-unstyled">
+                  <li class = "my-3">
+                      <a href = "#" class = "text-white text-decoration-none">
+                          <i class = "fas fa-chevron-right me-1"></i> Home
+                      </a>
+                  </li>
+                  <li class = "my-3">
+                      <a href = "#" class = "text-white text-decoration-none t">
+                          <i class = "fas fa-chevron-right me-1"></i> Product
+                      </a>
+                  </li>
+                  <li class = "my-3">
+                      <a href = "#" class = "text-white text-decoration-none">
+                          <i class = "fas fa-chevron-right me-1"></i> Event
+                      </a>
+                  </li>
+                  <li class = "my-3">
+                      <a href = "#" class = "text-white text-decoration-none">
+                          <i class = "fas fa-chevron-right me-1"></i> Membership
+                      </a>
+                  </li>
+                  <li class = "my-3">
+                      <a href = "#" class = "text-white text-decoration-none">
+                          <i class = "fas fa-chevron-right me-1"></i> About Us
+                      </a>
+                  </li>
+                  <li class = "my-3">
+                      <a href = "#" class = "text-white text-decoration-none">
+                          <i class = "fas fa-chevron-right me-1"></i> Contact Us
+                      </a>
+                  </li>
+              </ul>
+          </div>
+          <div class = "col-md-6 col-lg-3">
+              <h5 class = "fw-light mb-3">Contact Us</h5>
+              <div class = "d-flex justify-content-start align-items-start my-2">
+                  <span class = "me-3">
+                      <i class = "fas fa-map-marked-alt"></i>
+                  </span>
+                  <span class = "fw-light">
+                     8A,Ton That Huyet,HaNoi
+                  </span>
+              </div>
+              <div class = "d-flex justify-content-start align-items-start my-2">
+                  <span class = "me-3">
+                      <i class = "fas fa-envelope"></i>
+                  </span>
+                  <span class = "fw-light">
+                      Rhythm.support@gmail.com
+                  </span>
+              </div>
+              <div class = "d-flex justify-content-start align-items-start my-2d">
+                  <span class = "me-3">
+                      <i class = "fas fa-phone-alt"></i>
+                  </span>
+                  <span class = "fw-light">
+                      +849999999
+                  </span>
+              </div>
+          </div>
+          <div class = "col-md-6 col-lg-3">
+              <h5 class = "fw-light mb-3">Follow Us</h5>
+              <div>
+                  <ul class = "list-unstyled d-flex">
+                      <li>
+                          <a href = "#" class = "text-white text-decoration-none  fs-4 me-4"><i class = "fab fa-facebook-f"></i> </a>
+                      </li>
+                      <li>
+                          <a href = "#" class = "text-white text-decoration-none  fs-4 me-4"><i class = "fab fa-twitter"></i></a>
+                      </li>
+                      <li>
+                          <a href = "#" class = "text-white text-decoration-none fs-4 me-4"><i class = "fab fa-instagram"></i></a>
+                      </li>
+                  </ul>
+              </div>
+          </div>
+          <hr class="mb-4">
+          <div class="row align-items-center">
+            <div class="text-center">
+              <p>Copyright @Group3</p>
+            </div>
+          </div>
+      </div>
+  </div>
+</footer>
+<!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script> -->
+
+
+
+</body>
+</html>

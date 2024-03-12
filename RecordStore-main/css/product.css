@@ -7,25 +7,30 @@ body {
 header {
     margin-top: 104px;
 }
-/* 
+
 .custom-list {
     background-color: white;
-    color: white;
+    color: black;
     padding: 10px;
-} */
-
-.new-custom-list{
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-wrap: wrap;
+   
     
 }
 
+.new-custom-list{
+    list-style-type: none;
+    margin: -5px;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 10px;
+    
+}
+
+
 .new-custom-list span {
     flex: 1;
-    margin: 5px; 
+    margin: 5px ; 
+    
 }
 
 .new-custom-list a {
@@ -38,7 +43,7 @@ header {
     border-radius: 5px;
     font-size: 20px;
     border: 1px solid #ccc;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
     margin-top: 5px;
 }
 
@@ -48,7 +53,7 @@ header {
     color: white;
     text-decoration: none;
     text-align: center;
-    background-color: rgb(87, 85, 85);
+    background-color: rgb(197, 194, 194);
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     font-size: 36px;
@@ -105,11 +110,13 @@ header {
 }
 
 
-.options-list li {
+.options-list li a {
     max-width: 100%;
     padding: 10px;
     cursor: pointer;
     /* display: none; */
+    color: black;
+    text-decoration: none;
 }
 
 
@@ -163,15 +170,15 @@ header {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.main-content {
-    margin-top: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+.main-content1 {
+    /* margin-top: 10px; */
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
     /* background-color: #ff9f1a; */
     border-radius: 5px;
     width: 90%;
     margin-left: 77px;
     margin-bottom: 20px;
-    margin-top: 55px;
+    margin-top: 150px;
 }
 
 

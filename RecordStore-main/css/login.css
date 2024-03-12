@@ -1,4 +1,7 @@
-.rounded-5 {
-    margin-top: 100px;
-    margin-bottom: 100px;
+
+.box-area{
+    width: 400px;
+}
+body{
+    background-color: #1b1b1b ;
 }

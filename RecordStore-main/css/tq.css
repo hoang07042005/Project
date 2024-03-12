@@ -24,13 +24,14 @@ header {
   margin: 20px auto;
   display: flex;
   flex-wrap: wrap;
+  margin-top: 100px;
 }
 
 .event-details {
   height: 1200px;
   flex: 1;
   background-color: white;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
   margin-right: 20px;
   margin-bottom: 100px;
   padding: 0 190px;
@@ -40,7 +41,7 @@ header {
   flex: 0 0 300px;
   padding: 20px;
   background-color: white;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
   margin-bottom: 100px;
 }
 
@@ -60,7 +61,7 @@ header {
   background-color: #f15011;
   color: #fff;
   text-decoration: none;
-  border-radius: 5px;
+  border-radius: 25px;
   transition: background-color 0.3s ease;
   cursor: pointer;
   margin-top: 20px;
@@ -73,7 +74,9 @@ header {
 
 .btn-dark {
   background-color: #333;
+
 }
+
 .liveshow-info {
   max-width: 800px;
   /* margin: 10px auto; */
