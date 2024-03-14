@@ -16,17 +16,19 @@
 </head> 
 
 <div>
-    <header id = "header" class = "carousel slide" data-bs-ride = "carousel" style = "padding-top: 100px;">
+    <div class="wrapper">
         <nav class = "navbar navbar-expand-lg bg-dark py-4 fixed-top">
             <div class = "container">
                 <a class = "navbar-brand d-flex justify-content-between align-items-center order-lg-0" href = "index.html">
                     <img src="img/OIG2.jpg" alt="" style="width: 25px;">
                     <span class = "text-uppercase text-white fw-lighter ms-2">Rhythm House</span>
                 </a>
+    
                 <div class = "order-lg-2 nav-btns">
                     <button type = "button" class = " icon btn position-relative btn-outline-secondary">
                         <i class = "fa fa-search"></i>
                     </button>
+
                     <a href="cart.html">
                         <button type = "button" class = "icon btn position-relative btn-outline-secondary">
                             <i class = "fa fa-shopping-cart"></i>
@@ -56,7 +58,7 @@
                             <a class = "nav-link text-uppercase text-white rounded-pill" href = "ArtistList.html">Artist list</a>
                         </li>
                         <li class = "nav-item px-2 py-2">
-                            <a class = "nav-link text-uppercase text-white rounded-pill" href = "membership.html">Membership</a>
+                        <a class = "nav-link text-uppercase text-white rounded-pill" href = "membership.html">Membership</a>
                         </li>
                         <li class = "nav-item px-2 py-2">
                             <a class = "nav-link text-uppercase text-white rounded-pill" href = "about-us.html">About us</a>
@@ -68,51 +70,49 @@
                 </div>
             </div>
         </nav>
-    </header>
-
-    <div class="container" >     
-        <div class="ad">
+    </div>
         
-        <div class="wrapper" > 
-             
-            <div id="error_message"> 
-                <h2>Contact us</h2>
-                <form action=""
-                    id="myform"
-                    onsubmit="return validate();"> 
-                    <div class="input_field"> 
-                        <input type="text"
-                            placeholder="Name"
-                            id="name"> 
-                    </div> 
-                    <div class="input_field"> 
-                        <input type="text"
-                            placeholder="Subject"
-                            id="subject"> 
-                    </div> 
-                    <div class="input_field"> 
-                        <input type="text"
-                            placeholder="Phone"
-                            id="phone"> 
-                    </div> 
-                    <div class="input_field"> 
-                        <input type="text"
-                            placeholder="Email"
-                            id="email"> 
-                    </div> 
-                    <div class="input_field"> 
-                        <textarea placeholder="Message"
-                                id="message"> 
-                        </textarea> 
-                    </div> 
-                    <button class="btn btn-default" type="submit">Contact Us</button>
-                </form>
+
+    <div class="container1" >     
+        <div class="ad">
+            <div class="wrapper" > 
+                <div id="error_message"> 
+                    <h2>Contact us</h2>
+                    <form action=""
+                        id="myform"
+                        onsubmit="return validate();"> 
+                        <div class="input_field"> 
+                            <input type="text"
+                                placeholder="Name"
+                                id="name"> 
+                        </div> 
+                        <div class="input_field"> 
+                            <input type="text"
+                                placeholder="Subject"
+                                id="subject"> 
+                        </div> 
+                        <div class="input_field"> 
+                            <input type="text"
+                                placeholder="Phone"
+                                id="phone"> 
+                        </div> 
+                        <div class="input_field"> 
+                            <input type="text"
+                                placeholder="Email"
+                                id="email"> 
+                        </div> 
+                        <div class="input_field"> 
+                            <textarea placeholder="Message"
+                                    id="message"> 
+                            </textarea> 
+                        </div> 
+                        <button class="btn btn-default" type="submit">Contact Us</button>
+                    </form>
+                </div>
                 
-            </div>   
+            </div>
         </div>  
-        <script src="/RecordStore-main/js/contact_us.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-        <div id="map">
+         <div id="map">
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7448.206966465613!2d105.78168805098575!3d21.028544992246825!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x313454b32ecb92db%3A0x3964e6238a3bd088!2zOCBUw7RuIFRo4bqldCBUaHV54bq_dCwgTeG7uSDEkMOsbmgsIEPhuqd1IEdp4bqleSwgSMOgIE7hu5lp!5e0!3m2!1svi!2s!4v1710407634586!5m2!1svi!2s" width="500" height="800" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
         <div class="contact-info">
@@ -124,8 +124,12 @@
             <p><strong>LIVE CHAT VIA SOCIAL MEDIA:<br /></strong>Chat directly  <a href="#">FACEBOOK PAGE</a> or <a href="#">INSTAGRAM</a>.</p>
             <p><strong>EMAIL:<br /></strong> Email : <a href="#">Rhythm.support@gmail.com</a></p>
         </div>
-    </div>
-</div>   
+          
+    </div>   
+    <script src="/RecordStore-main/js/contact_us.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+        
+
     <footer class = "bg-dark py-5">
         <div class = "container">
             <div class = "row text-white g-4">

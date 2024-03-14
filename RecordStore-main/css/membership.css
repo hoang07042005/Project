@@ -1,18 +1,18 @@
 
-  p {
+  /* p {
     text-align: center;
     color: #171717;
   } 
   .example-class {
     margin-top: 100px;
     margin-bottom: 100px;
-    max-width: 100%;
+    width: 0%;
   }
 
   
   .price-row{
     display: flex;
-    /* align-items: center; */
+   
     justify-content: center;
   }
   
@@ -75,8 +75,100 @@
     .box{
         margin: 12px 23px;
     }
-  }
+  } */
 
+
+
+
+  /* Membership Section Styles */
+.example-class {
+  margin-top: 50px;
+  margin-bottom: 80px;
+}
+
+.price-row {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 30px;
+}
+
+p {
+  text-align: center;
+}
+
+.box1,
+.box2, 
+.box3 {
+  width: 30%;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  text-align: center;
+}
+.box1{
+  background-color:rgb(184, 115, 51) ;
+}
+.box2{
+  background-color: rgb(192, 192, 192);
+}
+.box3{
+  background-color: rgb(255, 215, 0);
+}
+.box1 h1,
+.box2 h1,
+.box3 h1 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.box1 h2,
+.box2 h2,
+.box3 h2 {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.box1 pre,
+.box2 pre,
+.box3 pre {
+  font-size: 14px;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.box1 span,
+.box2 span,
+.box3 span {
+  color: #fff;
+}
+.box .btn {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.box .btn:hover {
+  background-color: #0056b3;
+}
+
+/* Footer Styles */
+footer {
+  color: #fff;
+}
+
+.footer-link {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer-link:hover {
+  text-decoration: underline;
+}
 
 
 

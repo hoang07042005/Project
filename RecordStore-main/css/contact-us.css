@@ -1,81 +1,71 @@
-/* Styles.css */
 
-body { 
-	background: white; 
-} 
-
-
-.wrapper { 
-	max-width: 400px; 
-	width: 200%; 
-	background: white; 
-	padding: 30px; 
-	border-radius: 5px; 
-	
-} 
-
-.wrapper h2 { 
-	text-align: center; 
-	margin-bottom: 20px; 
-	text-transform: uppercase; 
-	letter-spacing: 3px; 
-	color: #332902; 
-} 
-
-.wrapper .input_field { 
-	margin-bottom: 10px; 
-} 
-
-.wrapper 
-	.input_field 
-	input[type="text"], 
-.wrapper textarea { 
-	border: 1px solid #1e1e1e; 
-	width: 100%; 
-	padding: 10px; 
-	background-color: #ececec;
-	border-radius: 5px;
-} 
-
-.wrapper textarea {
-    resize: none;  
-	height: 130px;
-    width: 341px; 
-} 
-
-
-#error_message { 
-	margin-bottom: 20px; 
-	margin-top: 50px;
-	padding: 0px; 
-	text-align: center; 
-	font-size: 14px; 
-	transition: all 0.5s ease; 
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
-#error_message h2  {
-	margin-bottom: 30px;
-}
 
-.ad{
-    display: flex;
-	margin-top: 40px;
-    margin-bottom: 40px;
-	box-shadow: #c52222;
-}
 
-.map{
-    height: auto;
-    width: auto;
-    padding: 10px;
-}
-
-.map img {
-	margin-top: 100px;
-}
-
+#error_message,
+#map,
 .contact-info {
-	margin-left: 30px;
-	margin-top: 50px;
-	
+    flex: 1;
+    margin: 0 10px; 
+
 }
+.container1 {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 20px; 
+	display: flex;
+    flex-wrap: wrap;
+	margin-top: 150px;
+    margin-bottom: 100px;
+}
+
+
+
+.navbar-brand img {
+    max-width: 50%;
+    height: auto;
+    vertical-align: middle;
+}
+
+.nav-btns button {
+    margin-left: 10px;
+}
+
+
+
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+	width: 300px;
+}
+
+.input_field {
+    margin-bottom: 20px;
+}
+
+input[type="text"],
+textarea {
+    width: 270px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+textarea {
+    height: 150px;
+}
+
+
+
+
+
+
