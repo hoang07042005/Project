@@ -1,10 +1,13 @@
 
 #about{
     background-color: rgba(0, 0, 0, 0.05);
+    margin-left: 220px;
 }
+
 #story{
     background-color: rgba(4, 2, 2, 0.05);
 }
 #story p{
-    max-width: 600px;
+    max-width: 100%;
+    /* margin-left: 210px; */
 }

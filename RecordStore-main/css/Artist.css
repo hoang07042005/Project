@@ -70,7 +70,7 @@ main {
 .info-item label {
   font-weight: bold;
   display: inline-block;
-  width: 120px;
+  width: 200px;
 }
 .info-item span {
   margin-left: 50px;
