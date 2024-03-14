@@ -74,70 +74,59 @@
         <div class="main-content1">
             <div class="container">
                 <div class="row">
-                    <div class="custom-list">
-                        <div class="new-custom-list">
-                            <span><a href="#cd-dvd">CD/DVD</a></span>
-                            <span><a href="#vinly">Vinly</a></span>
-                            <span><a href="#books">Books</a></span>
+                    <div class="dropdown-container">
+                        <div class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                Category
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                            <li><a class="dropdown-item" href="#">Rock</a></li>
+                            <li><a class="dropdown-item" href="#">Electronic</a></li>
+                            <li><a class="dropdown-item" href="#">Pop</a></li>
+                            <li><a class="dropdown-item" href="#">Movie</a></li>
+                            </ul>
                         </div>
-                        <div class="elementor-widget-container">
-                            <h1 class="elementor-heading-title elementer-size-defaultl">PRODUCT</h1>
+                        <div class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                Time Liness
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                            <li><a class="dropdown-item" href="#">90s</a></li>
+                            <li><a class="dropdown-item" href="#">80s (1507)</a></li>
+                            <li><a class="dropdown-item" href="#">70s (1)</a></li>
+                            </ul>
                         </div>
-                    
-                        <div class="woof_container">
-                            <div class="woof_block_html_items">
-                                <div class="custom-select">
-                                    <span id="selected-option-1" onclick="toggleOptions('options-list-1')">Category</span>
-                                    <ul class="options-list" id="options-list-1">
-                                        <li><a href="Artist.html">Rock</a></li>
-                                        <li><a href="electronic_page.html">Electronic</a></li>
-                                        <li><a href="pop_page.html">Pop</a></li>
-                                        <li><a href="movie_page.html">Movie</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <input type="hidden" name="woof_t_pa_the-loai" value="product">
+                        <div class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                Perform
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                            <li><a class="dropdown-item" href="#">Solo</a></li>
+                            <li><a class="dropdown-item" href="#">Bands</a></li>
+                            <li><a class="dropdown-item" href="#"></a></li>
+                            </ul>
+                        </div>
+                        <div class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                CD/DVD
+                            </button>
                             
-                            <div class="woof_block_html_items">
-                                <div class="custom-select">
-                                    <span id="selected-option-2" onclick="toggleOptions('options-list-2')">Time Liness</span>
-                                    <ul class="options-list" id="options-list-2">
-                                        <li><a href="#">90s</a></li>
-                                        <li><a href="#">80s (1507)</a></li>
-                                        <li><a href="#">70s (1)</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <input type="hidden" name="woof_t_pa_thoi_ky" value="product">
+                        </div>
+                        <div class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                Vinly
+                            </button>
+                            
+                        </div>
+                        <div class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                Books
+                            </button>
                         
-                            <div class="woof_block_html_items">
-                                <div class="custom-select">
-                                    <span id="selected-option-3" onclick="toggleOptions('options-list-3')">Perform</span>
-                                    <ul class="options-list" id="options-list-3">
-                                        <li><a href="#"></a>Solo</li>
-                                        <li><a href="#"></a>Bands</li>
-                                        <li><a href="#"></a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <input type="hidden" name="woof_t_pa_" value="">
-
-                            
                         </div>
-                </div>
-                    <script>
-                        function toggleOptions(optionsListId) {
-                            var optionsList = document.getElementById(optionsListId);
-                    
-                            if (optionsList.style.display === 'none' || optionsList.style.display === '') {
-                                var rect = document.getElementById(optionsListId.replace("options-list-", "selected-option-")).getBoundingClientRect();
-                                optionsList.style.top = rect.height + 'px';
-                                optionsList.style.display = 'block';
-                            } else {
-                                optionsList.style.display = 'none';
-                            }
-                        }
-                    </script>
+                    </div>
+
+
 
                     <div class="col-9">
                         <hr>
@@ -154,14 +143,15 @@
                                     <a href = "" class = "btn btn-primary mt-3">Add to Cart</a>
                                 </div>
                             </div>
-                            <div class = "card-item col-md-6 col-lg-4 col-xl-3 p-2" >
+                            <div class = "col-md-6 col-lg-4 col-xl-3 p-2">
                                 <div class = "product-img position-relative overflow-hidden">
-                                    <img src = "img/1-84-800x791 (1).jpg" class = "w-100" alt="">
+                                    <img src = "img/NzEtMjU5OC5qcGVn.jpeg" class = "w-100" alt="">
+                                    <span class = "position-absolute bg-primary text-white d-flex align-items-center justify-content-center">sale</span>
                                 </div>
                                 <div class = "text-center">
                                     <p class = "text-capitalize mt-3 mb-1">
-                                        PERSON TO PERSON  (GREEN)       </p>
-                                    <span class = "fw-bold d-block">$ 50.00</span>
+                                        A KIND OF BLUES VOLUME ONE (LOS ANGELES BROADCAST 1994)</p>
+                                    <span class = "fw-bold d-block">$ 45.50</span>
                                     <a href = "#" class = "btn btn-primary mt-3">Add to Cart</a>
                                 </div>
                             </div>
@@ -210,15 +200,14 @@
                                     <a href = "#" class = "btn btn-primary mt-3">Add to Cart</a>
                                 </div>
                             </div>
-                            <div class = "col-md-6 col-lg-4 col-xl-3 p-2">
+                            <div class = "card-item col-md-6 col-lg-4 col-xl-3 p-2" >
                                 <div class = "product-img position-relative overflow-hidden">
-                                    <img src = "img/NzEtMjU5OC5qcGVn.jpeg" class = "w-100" alt="">
-                                    <span class = "position-absolute bg-primary text-white d-flex align-items-center justify-content-center">sale</span>
+                                    <img src = "img/1-84-800x791 (1).jpg" class = "w-100" alt="">
                                 </div>
                                 <div class = "text-center">
                                     <p class = "text-capitalize mt-3 mb-1">
-                                        A KIND OF BLUES VOLUME ONE (LOS ANGELES BROADCAST 1994)</p>
-                                    <span class = "fw-bold d-block">$ 45.50</span>
+                                        PERSON TO PERSON  (GREEN)       </p>
+                                    <span class = "fw-bold d-block">$ 50.00</span>
                                     <a href = "#" class = "btn btn-primary mt-3">Add to Cart</a>
                                 </div>
                             </div>
