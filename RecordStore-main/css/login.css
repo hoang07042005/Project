@@ -4,7 +4,7 @@
     width: 400px;
 }
 body{
-    background-color: white;
+    background-color: #212529;
 }
 
 #login-form .input-area, #signup-form .input-area {
