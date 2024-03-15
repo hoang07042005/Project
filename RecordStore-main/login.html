@@ -62,18 +62,20 @@
         </nav>
     </header>
      <div class="from-popup container d-flex justify-content-center align-items-center min-vh-100">
-            <div class="from-login row  border rounded-5 p-3 bg-white shadow box-area"> 
-            <div class="from-signin col-md">
+        <div class="from-login row  border rounded-5 p-3 bg-white shadow box-area"> 
+            <div id="login-form" class="from-signin col-md" >
               <div class="row align-items-center">
                     <div class="header-text mb-4">
                          <h2>Login</h2>
                         
                     </div>
-                    <div class="input-group mb-3">
-                        <input type="text" class="form-control form-control-lg bg-light fs-6" placeholder="Email address">
+                    <div class="input-area mb-2">
+                        <input id="email" type="text" class="form-control form-control-lg bg-light fs-6" placeholder="Email address">
+                        <span class="form-message"></span>
                     </div>
-                    <div class="input-group mb-1">
-                        <input type="password" class="form-control form-control-lg bg-light fs-6" placeholder="Password">
+                    <div class="input-area mb-2">
+                        <input id="password" type="password" class="form-control form-control-lg bg-light fs-6" placeholder="Password">
+                        <span class="form-message"></span>
                     </div>
                     <div class="input-group mb-5 d-flex justify-content-between">
                         <div class="form-check">
@@ -193,5 +195,23 @@
             </div>
         </footer>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="js/form-check.js"></script>
+    <script>
+
+        document.addEventListener('DOMContentLoaded', function () {
+          Validator({
+            form: '#login-form',
+            formGroupSelector: '.input-area',
+            errorSelector: '.form-message',
+            rules: [
+              Validator.isEmail('#email'),
+              Validator.minLength('#password', 6),
+            ],
+            onSubmit: function (data) {
+              console.log(data);
+            }
+          }); 
+        })
+      </script>
 </body>
 </html>

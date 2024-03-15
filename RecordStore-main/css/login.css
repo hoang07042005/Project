@@ -1,7 +1,16 @@
 
+
 .box-area{
     width: 400px;
 }
 body{
-    background-color: w ;
+    background-color: white;
+}
+
+#login-form .input-area, #signup-form .input-area {
+    height: 70px;
+}
+
+#login-form .form-message, #signup-form .form-message {
+    margin-left: 3px;
 }
